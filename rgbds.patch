@@ -63,7 +63,7 @@ index e501da23..31fd42e5 100644
  
  	va_start(args, fmt);
 -	printDiag(fmt, args, "error: ", ":\n    ", NULL);
-+	printDiag(fmt, args, "error: ", ":    ", NULL);
++	printDiag(fmt, args, "error: ", ": ", NULL);
  	va_end(args);
  	nbErrors++;
  }
