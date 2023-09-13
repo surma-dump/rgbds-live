@@ -28,11 +28,11 @@ this.compiler = new Object();
     }
 
     function flushLog() {
-        originalLogFunction(buffered_log);
+        unbufferedLogFunction(buffered_log);
         buffered_log = "";
     }
 
-    function originalLogFunction(str) {
+    function unbufferedLogFunction(str) {
         if (log_callback)
             log_callback(str);
 
